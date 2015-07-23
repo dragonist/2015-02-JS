@@ -1,0 +1,6 @@
+table.showLine{
+	border: 1px solid black;
+}
+table.showLine *{
+	border: 1px solid black;
+}

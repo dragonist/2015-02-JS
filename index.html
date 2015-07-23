@@ -1,0 +1,67 @@
+
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="Table.css">
+	<script type="text/javascript" src="Table.js"></script>
+
+</head>
+<body id="container">
+
+</body>
+<script>
+var jsonData = [
+	{
+		id: "erin3141",
+		pw: 1234,
+		name: "erin"
+	},{
+		id: "erin3142",
+		pw: 1234,
+		name: "erin3"
+	},{
+		id: "erin3144",
+		pw: 1234,
+		name: "erin"
+	},{
+		id: "erin314",
+		pw: 1234999999999,
+		name: "erin"
+	},{
+		id: "erin314",
+		pw: 1234,
+		name: "erin"
+	},{
+		id: "erin314",
+		pw: 1234,
+		name: "erin"
+	},{
+		id: "erin314",
+		pw: 1234,
+		name: "erin"
+	}
+];
+
+var source = new Table(jsonData);
+
+var tb = source.getTable({
+	showColumn: true,
+	showLine: true,
+	// showNumber:true,
+	// mergeSameColumn: true,
+	align: "center"
+});
+document.getElementById("container").appendChild(tb);
+
+// source.getUl();
+// source.getUl({
+// 	// setClassName: true,
+// 	// setPlusEvent: true,
+// 	// setMinusEvent: true
+// });
+// source.getCanvas;
+	
+</script>
+</html>
