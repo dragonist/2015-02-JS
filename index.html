@@ -44,7 +44,7 @@ var jsonData = [
 	}
 ];
 
-var source = new Table(jsonData);
+var source = new TableDragonist(jsonData);
 
 var tb = source.getTable({
 	showColumn: true,
@@ -53,6 +53,7 @@ var tb = source.getTable({
 	// mergeSameColumn: true,
 	align: "center"
 });
+
 document.getElementById("container").appendChild(tb);
 
 // source.getUl();
